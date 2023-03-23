@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gráfico dinâmico</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+            integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main__box">
+        <div class="upper__box" id="upper__box">
+            <div class="info__box" id="info__box">
+                <h2 class="balance" id="balance__value">Meu saldo</h2>
+                <p class="balance__value" id="balance__value">R$ 1.000</p>
+                <span class="emp__circle" id="emp__circle"></span>
+                <span class="full__circle" id="full__circle"></span>
+            </div>
+        </div>
+
+        <div class="low__box" id="low__box">
+            
+            <table class="charts-css">
+                <caption class="main__title">Despesas - Últimos 7 dias</caption>
+            </table>
+
+                <div class="days__value">
+                    <p class="day-value seg"></p>
+                    <p class="day-value ter"></p>
+                    <p class="day-value qua"></p>
+                    <p class="day-value qui"></p>
+                    <p class="day-value seg"></p>
+                    <p class="day-value sab"></p>
+                    <p class="day-value dom"></p>
+                </div>
+
+                <div class="bar__box" id="bar__box">
+                    <span  class="bars bar__1" id="bars bar__1"></span>
+                    <span  class="bars bar__2" id="bars bar__2"></span>
+                    <span  class="bars bar__3" id="bars bar__3"></span>
+                    <span  class="bars bar__4" id="bars bar__4"></span>
+                    <span  class="bars bar__5" id="bars bar__5"></span>
+                    <span  class="bars bar__6" id="bars bar__6"></span>
+                    <span  class="bars bar__7" id="bars bar__7"></span>
+                </div>
+
+                <div class="days__row">
+                     <p class="day-week seg">Seg</p>
+                     <p class="day-week ter">Ter</p>
+                     <p class="day-week qua">Qua</p>
+                     <p class="day-week qui">Qui</p>
+                     <p class="day-week sex">Sex</p>
+                     <p class="day-week sab">Sab</p>
+                     <p class="day-week dom">Dom</p>
+                </div>
+    
+                <hr></dhr>
+
+                <div class="info__box2" id="info__box2">
+                    <h2 class="balance2" id="balance__value">Total esse mês</h2>
+                    <p class="balance__value2" id="balance__value2">R$&nbsp;</p>
+                    <span class="porcetage__balance" id="porcentage__balance">2.3%</span>
+                    <p class="last__month" id="last__month">Último mês</p>
+                </div>
+        </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
